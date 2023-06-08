@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/influxdata/influxdb-client-go/v2/api/write"
+	"github.com/szmcdull/influxdb-client-go/v2/api/write"
 )
 
 // GenPoints generates num points

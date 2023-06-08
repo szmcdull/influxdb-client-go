@@ -7,7 +7,7 @@ package api
 import (
 	"context"
 	"fmt"
-	"github.com/influxdata/influxdb-client-go/v2/domain"
+	"github.com/szmcdull/influxdb-client-go/v2/domain"
 )
 
 // BucketsAPI provides methods for managing Buckets in a InfluxDB server.

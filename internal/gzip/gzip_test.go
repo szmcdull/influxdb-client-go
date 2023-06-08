@@ -10,7 +10,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/influxdata/influxdb-client-go/v2/internal/gzip"
+	"github.com/szmcdull/influxdb-client-go/v2/internal/gzip"
 )
 
 func TestGzip(t *testing.T) {

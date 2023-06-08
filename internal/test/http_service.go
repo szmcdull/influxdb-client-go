@@ -16,8 +16,8 @@ import (
 	"sync"
 	"testing"
 
-	http2 "github.com/influxdata/influxdb-client-go/v2/api/http"
 	"github.com/stretchr/testify/assert"
+	http2 "github.com/szmcdull/influxdb-client-go/v2/api/http"
 )
 
 // HTTPService is http.Service implementation for tests

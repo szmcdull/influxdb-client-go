@@ -6,7 +6,7 @@
 package log
 
 import (
-	ilog "github.com/influxdata/influxdb-client-go/v2/log"
+	ilog "github.com/szmcdull/influxdb-client-go/v2/log"
 )
 
 // Debugf writes formatted debug message to the Logger instance

@@ -13,11 +13,11 @@ import (
 	"testing"
 	"time"
 
-	http2 "github.com/influxdata/influxdb-client-go/v2/api/http"
-	"github.com/influxdata/influxdb-client-go/v2/api/write"
-	"github.com/influxdata/influxdb-client-go/v2/internal/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	http2 "github.com/szmcdull/influxdb-client-go/v2/api/http"
+	"github.com/szmcdull/influxdb-client-go/v2/api/write"
+	"github.com/szmcdull/influxdb-client-go/v2/internal/test"
 )
 
 func TestWritePoint(t *testing.T) {

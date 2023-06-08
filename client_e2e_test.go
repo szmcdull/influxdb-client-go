@@ -17,12 +17,12 @@ import (
 	"testing"
 	"time"
 
-	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
-	"github.com/influxdata/influxdb-client-go/v2/domain"
-	"github.com/influxdata/influxdb-client-go/v2/internal/test"
-	"github.com/influxdata/influxdb-client-go/v2/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	influxdb2 "github.com/szmcdull/influxdb-client-go/v2"
+	"github.com/szmcdull/influxdb-client-go/v2/domain"
+	"github.com/szmcdull/influxdb-client-go/v2/internal/test"
+	"github.com/szmcdull/influxdb-client-go/v2/log"
 )
 
 var authToken string

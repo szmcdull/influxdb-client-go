@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	ilog "github.com/influxdata/influxdb-client-go/v2/internal/log"
-	dlog "github.com/influxdata/influxdb-client-go/v2/log"
 	"github.com/stretchr/testify/assert"
+	ilog "github.com/szmcdull/influxdb-client-go/v2/internal/log"
+	dlog "github.com/szmcdull/influxdb-client-go/v2/log"
 )
 
 func TestLogging(t *testing.T) {

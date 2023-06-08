@@ -24,11 +24,11 @@ import (
 	"sync"
 	"time"
 
-	http2 "github.com/influxdata/influxdb-client-go/v2/api/http"
-	"github.com/influxdata/influxdb-client-go/v2/api/query"
-	"github.com/influxdata/influxdb-client-go/v2/domain"
-	"github.com/influxdata/influxdb-client-go/v2/internal/log"
-	ilog "github.com/influxdata/influxdb-client-go/v2/log"
+	http2 "github.com/szmcdull/influxdb-client-go/v2/api/http"
+	"github.com/szmcdull/influxdb-client-go/v2/api/query"
+	"github.com/szmcdull/influxdb-client-go/v2/domain"
+	"github.com/szmcdull/influxdb-client-go/v2/internal/log"
+	ilog "github.com/szmcdull/influxdb-client-go/v2/log"
 )
 
 const (
@@ -50,20 +50,19 @@ const (
 // The name of a struct field or a map key (must be a string) will be a param name.
 // The name of the parameter represented by a struct field can be specified by JSON annotation:
 //
-// type Condition struct {
-//     Start  time.Time  `json:"start"`
-//     Field  string     `json:"field"`
-//     Value  float64    `json:"value"`
-//	}
+//	type Condition struct {
+//	    Start  time.Time  `json:"start"`
+//	    Field  string     `json:"field"`
+//	    Value  float64    `json:"value"`
+//		}
 //
-//  Parameters are then accessed via the Flux params object:
+//	 Parameters are then accessed via the Flux params object:
 //
-//  query:= `from(bucket: "environment")
-// 		|> range(start: time(v: params.start))
-//		|> filter(fn: (r) => r._measurement == "air")
-//		|> filter(fn: (r) => r._field == params.field)
-//		|> filter(fn: (r) => r._value > params.value)`
-//
+//	 query:= `from(bucket: "environment")
+//			|> range(start: time(v: params.start))
+//			|> filter(fn: (r) => r._measurement == "air")
+//			|> filter(fn: (r) => r._field == params.field)
+//			|> filter(fn: (r) => r._value > params.value)`
 type QueryAPI interface {
 	// QueryRaw executes flux query on the InfluxDB server and returns complete query result as a string with table annotations according to dialect
 	QueryRaw(ctx context.Context, query string, dialect *domain.Dialect) (string, error)
@@ -113,7 +112,7 @@ type queryAPI struct {
 	lock        sync.Mutex
 }
 
-//  queryBody holds the body for an HTTP query request.
+// queryBody holds the body for an HTTP query request.
 type queryBody struct {
 	Dialect *domain.Dialect  `json:"dialect,omitempty"`
 	Query   string           `json:"query"`

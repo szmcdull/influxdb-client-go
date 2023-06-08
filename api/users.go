@@ -12,8 +12,8 @@ import (
 	"net/http/cookiejar"
 	"sync"
 
-	"github.com/influxdata/influxdb-client-go/v2/api/http"
-	"github.com/influxdata/influxdb-client-go/v2/domain"
+	"github.com/szmcdull/influxdb-client-go/v2/api/http"
+	"github.com/szmcdull/influxdb-client-go/v2/domain"
 	"golang.org/x/net/publicsuffix"
 )
 

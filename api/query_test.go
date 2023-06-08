@@ -14,11 +14,11 @@ import (
 	"testing"
 	"time"
 
-	http2 "github.com/influxdata/influxdb-client-go/v2/api/http"
-	"github.com/influxdata/influxdb-client-go/v2/api/query"
-	"github.com/influxdata/influxdb-client-go/v2/internal/gzip"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	http2 "github.com/szmcdull/influxdb-client-go/v2/api/http"
+	"github.com/szmcdull/influxdb-client-go/v2/api/query"
+	"github.com/szmcdull/influxdb-client-go/v2/internal/gzip"
 )
 
 func mustParseTime(s string) time.Time {

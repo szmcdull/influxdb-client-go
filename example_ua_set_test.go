@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/influxdata/influxdb-client-go/v2"
-	ihttp "github.com/influxdata/influxdb-client-go/v2/api/http"
+	"github.com/szmcdull/influxdb-client-go/v2"
+	ihttp "github.com/szmcdull/influxdb-client-go/v2/api/http"
 )
 
 // UserAgentSetter is the implementation of Doer interface for setting User-Agent header

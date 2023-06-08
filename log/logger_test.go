@@ -10,9 +10,9 @@ import (
 	"strings"
 	"testing"
 
-	logi "github.com/influxdata/influxdb-client-go/v2/internal/log"
-	dlog "github.com/influxdata/influxdb-client-go/v2/log"
 	"github.com/stretchr/testify/assert"
+	logi "github.com/szmcdull/influxdb-client-go/v2/internal/log"
+	dlog "github.com/szmcdull/influxdb-client-go/v2/log"
 )
 
 func logMessages() {

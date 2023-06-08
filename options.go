@@ -9,8 +9,8 @@ import (
 	nethttp "net/http"
 	"time"
 
-	"github.com/influxdata/influxdb-client-go/v2/api/http"
-	"github.com/influxdata/influxdb-client-go/v2/api/write"
+	"github.com/szmcdull/influxdb-client-go/v2/api/http"
+	"github.com/szmcdull/influxdb-client-go/v2/api/write"
 )
 
 // Options holds configuration properties for communicating with InfluxDB server
@@ -123,6 +123,7 @@ func (o *Options) LogLevel() uint {
 //   - WarningLevel
 //   - InfoLevel
 //   - DebugLevel
+//
 // The DebugLevel will print also content of writen batches, queries.
 // The InfoLevel prints HTTP requests info, among others.
 // Set log.Log to nil in order to completely disable logging.

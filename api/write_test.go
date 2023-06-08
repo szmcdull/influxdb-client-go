@@ -14,12 +14,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/influxdata/influxdb-client-go/v2/api/http"
-	"github.com/influxdata/influxdb-client-go/v2/api/write"
-	"github.com/influxdata/influxdb-client-go/v2/internal/test"
-	"github.com/influxdata/influxdb-client-go/v2/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/szmcdull/influxdb-client-go/v2/api/http"
+	"github.com/szmcdull/influxdb-client-go/v2/api/write"
+	"github.com/szmcdull/influxdb-client-go/v2/internal/test"
+	"github.com/szmcdull/influxdb-client-go/v2/log"
 )
 
 func TestWriteAPIWriteDefaultTag(t *testing.T) {

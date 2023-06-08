@@ -8,7 +8,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/influxdata/influxdb-client-go/v2/domain"
+	"github.com/szmcdull/influxdb-client-go/v2/domain"
 )
 
 // LabelsAPI provides methods for managing labels in a InfluxDB server.

@@ -9,7 +9,8 @@
 //
 // Service can be obtained from client using HTTPService() method.
 // It can be also created directly. To instantiate a Service use NewService(). Remember, the authorization param is in form "Token your-auth-token". e.g. "Token DXnd7annkGteV5Wqx9G3YjO9Ezkw87nHk8OabcyHCxF5451kdBV0Ag2cG7OmZZgCUTHroagUPdxbuoyen6TSPw==".
-//     srv := http.NewService("http://localhost:8086", "Token my-token", http.DefaultOptions())
+//
+//	srv := http.NewService("http://localhost:8086", "Token my-token", http.DefaultOptions())
 package http
 
 import (
@@ -22,8 +23,8 @@ import (
 	"net/url"
 	"strconv"
 
-	http2 "github.com/influxdata/influxdb-client-go/v2/internal/http"
-	"github.com/influxdata/influxdb-client-go/v2/internal/log"
+	http2 "github.com/szmcdull/influxdb-client-go/v2/internal/http"
+	"github.com/szmcdull/influxdb-client-go/v2/internal/log"
 )
 
 // RequestCallback defines function called after a request is created before any call

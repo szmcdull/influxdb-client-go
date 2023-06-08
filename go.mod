@@ -13,7 +13,6 @@ require (
 
 require (
 	github.com/apache/arrow/go/v10 v10.0.1
-	github.com/influxdata/influxdb-client-go/v2 v2.12.3
 	google.golang.org/grpc v1.52.0
 )
 

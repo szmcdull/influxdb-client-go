@@ -13,14 +13,13 @@ import (
 	"testing"
 	"time"
 
-	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
-	"github.com/influxdata/influxdb-client-go/v2/api"
-	"github.com/influxdata/influxdb-client-go/v2/domain"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	influxdb2 "github.com/szmcdull/influxdb-client-go/v2"
+	"github.com/szmcdull/influxdb-client-go/v2/api"
+	"github.com/szmcdull/influxdb-client-go/v2/domain"
 )
 
-//
 const taskFlux = `from(bucket:"my-bucket") |> range(start: -1h) |> last()`
 
 func TestTasksAPI_CRUDTask(t *testing.T) {

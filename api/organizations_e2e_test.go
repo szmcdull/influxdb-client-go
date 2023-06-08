@@ -1,3 +1,4 @@
+//go:build e2e
 // +build e2e
 
 // Copyright 2020-2021 InfluxData, Inc. All rights reserved.
@@ -11,11 +12,11 @@ import (
 	"fmt"
 	"testing"
 
-	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
-	"github.com/influxdata/influxdb-client-go/v2/api"
-	"github.com/influxdata/influxdb-client-go/v2/domain"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	influxdb2 "github.com/szmcdull/influxdb-client-go/v2"
+	"github.com/szmcdull/influxdb-client-go/v2/api"
+	"github.com/szmcdull/influxdb-client-go/v2/domain"
 )
 
 func TestOrganizationsAPI(t *testing.T) {
